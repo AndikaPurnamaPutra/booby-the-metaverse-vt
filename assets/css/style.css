@@ -210,7 +210,6 @@ section {
 }
 .navbar-collapse.active {
   height: 200px;
-  overflow-y: auto;
 }
 .navbar-collapse.active .wrap-btn {
   opacity: 1;
