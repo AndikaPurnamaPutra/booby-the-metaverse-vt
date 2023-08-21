@@ -1,0 +1,21 @@
+.trailer {
+    &-top {
+        text-align: center;
+        margin-bottom: 60px;
+        .label-text {
+            margin-bottom: 8px;
+        }
+    }
+
+    &-bottom {
+        gap: 40px;
+        .img-trailer {
+            max-width: 970px;
+        }
+
+        .desc-text {
+            max-width: 227px;
+            margin-left: 100px;
+        }
+    }
+}

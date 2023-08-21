@@ -1,0 +1,97 @@
+.navbar {
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 30px;
+    }
+
+    &-brand {
+        display: inline-flex;
+        .img-logo {
+            max-width: 170.61px;
+        }
+    }
+
+    &-toggler {
+        display: none;
+        cursor: pointer;
+
+        &-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            background-image: url("/assets/images/menu.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            // fill: $primary-color;
+        }
+    }
+
+    &-collapse {
+        .wrap-btn {
+            gap: 30px;
+        }
+
+        &.active {
+            height: 100vh;
+            overflow: auto;
+
+            .wrap-btn {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.sticky {
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        z-index: 100;
+        transition: all 50ms ease;
+    }
+
+    &.scrolled {
+        background-color: $bg-dark;
+    }
+
+    @media (min-width: 993px) {
+        &-collapse {
+            &.active {
+                height: unset;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        &-toggler {
+            display: inline-flex;
+        }
+        &-collapse {
+            z-index: 99;
+            height: 0;
+            position: absolute;
+            top: 97.5px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $bg-dark;
+            transition: all 500ms ease;
+            overflow: hidden;
+
+            .wrap-btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: all 200ms ease;
+                opacity: 0;
+            }
+        }
+    }
+}

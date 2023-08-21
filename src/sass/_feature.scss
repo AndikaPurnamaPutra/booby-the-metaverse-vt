@@ -1,0 +1,57 @@
+.feature {
+    &-top {
+        margin-bottom: 60px;
+        .label-text {
+            margin-bottom: 8px;
+        }
+    }
+
+    &-bottom {
+        gap: 30px;
+        .card {
+            position: relative;
+
+            &-collapse {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                padding: 40px;
+                background-color: rgba($color: #000000, $alpha: 0.6);
+                opacity: 0.5;
+                transition: all 800ms ease;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            &-img {
+                display: flex;
+                max-width: 370px;
+            }
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .card-desc {
+                    max-width: 290px;
+                }
+            }
+
+            .btn-outline {
+                display: inline-block;
+            }
+
+            &:hover {
+                .card-collapse {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

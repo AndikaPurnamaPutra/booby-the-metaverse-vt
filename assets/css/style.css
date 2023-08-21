@@ -1,0 +1,455 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+.btn {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  display: inline-block;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+.btn-sign {
+  padding: 16px 31.5px;
+  border-radius: 70px;
+  outline: 1px solid #d0d0d0;
+  font-weight: 300;
+}
+.btn-sign span {
+  font-weight: 600;
+}
+.btn-outline {
+  font-size: 16px;
+  padding: 16px;
+  outline: 1px solid #ffffff;
+}
+.btn-platform {
+  display: inline-flex;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 135px;
+  margin: 0 auto;
+}
+.container-fluid {
+  max-width: 100%;
+  padding: 0 135px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 62px;
+    margin: 0 auto;
+  }
+  .container-fluid {
+    max-width: 100%;
+    padding: 0 62px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .container-fluid {
+    padding: 0 30px;
+  }
+}
+
+.img,
+.ic {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #d0d0d0;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #d0d0d0;
+  background-color: #000000;
+}
+
+section {
+  padding-block: 100px;
+}
+
+.label-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 8px;
+}
+.label-text .line {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.heading-text {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 72px;
+}
+
+.desc-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #d0d0d0;
+}
+
+.card .card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ffffff;
+}
+.card .card-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #d0d0d0;
+  line-height: 30px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 30px;
+}
+.navbar-brand {
+  display: inline-flex;
+}
+.navbar-brand .img-logo {
+  max-width: 170.61px;
+}
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("/assets/images/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.navbar-collapse .wrap-btn {
+  gap: 30px;
+}
+.navbar-collapse.active {
+  height: 100vh;
+  overflow: auto;
+}
+.navbar-collapse.active .wrap-btn {
+  width: 100%;
+  opacity: 1;
+}
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+  transition: all 50ms ease;
+}
+.navbar.scrolled {
+  background-color: #000000;
+}
+@media (min-width: 993px) {
+  .navbar-collapse.active {
+    height: unset;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-toggler {
+    display: inline-flex;
+  }
+  .navbar-collapse {
+    z-index: 99;
+    height: 0;
+    position: absolute;
+    top: 97.5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    transition: all 500ms ease;
+    overflow: hidden;
+  }
+  .navbar-collapse .wrap-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 200ms ease;
+    opacity: 0;
+  }
+}
+
+.hero {
+  position: relative;
+}
+.hero-top {
+  margin-bottom: 80px;
+}
+.hero-top .heading-text {
+  font-family: "Satoshi", sans-serif;
+  font-size: 142px;
+  font-weight: 900;
+  line-height: 170px;
+  text-align: center;
+}
+.hero-bottom {
+  gap: 30px;
+}
+.hero-bottom .wrap-desc {
+  max-width: 172px;
+}
+.hero-bottom .wrap-desc .desc-text:first-child {
+  margin-bottom: 14px;
+}
+.hero .wrap-img-inner {
+  display: inline-flex;
+  position: relative;
+}
+.hero .wrap-img .img-hero {
+  max-width: 1105px;
+}
+.hero .wrap-img .ic-hero {
+  position: absolute;
+  bottom: -56px;
+  right: 30px;
+  max-width: 150px;
+}
+
+.story-top {
+  margin-bottom: 60px;
+}
+.story-top .label-text {
+  margin-bottom: 8px;
+}
+.story-top .heading-content {
+  gap: 60px;
+}
+.story-top .wrap-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.story-bottom .img-story {
+  max-width: 1170px;
+}
+
+.feature-top {
+  margin-bottom: 60px;
+}
+.feature-top .label-text {
+  margin-bottom: 8px;
+}
+.feature-bottom {
+  gap: 30px;
+}
+.feature-bottom .card {
+  position: relative;
+}
+.feature-bottom .card-collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  transition: all 800ms ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.feature-bottom .card-img {
+  display: flex;
+  max-width: 370px;
+}
+.feature-bottom .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.feature-bottom .card-body .card-desc {
+  max-width: 290px;
+}
+.feature-bottom .card .btn-outline {
+  display: inline-block;
+}
+.feature-bottom .card:hover .card-collapse {
+  opacity: 1;
+}
+
+.progress-wrapper {
+  gap: 120px;
+}
+.progress-wrapper .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.progress-wrapper .card-left .label-text {
+  margin-bottom: 20px;
+}
+.progress-wrapper .card-left .card-title {
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 130px;
+  color: #ffffff;
+}
+.progress-wrapper .card-right .card-title {
+  margin-bottom: 28px;
+}
+.progress-wrapper .card-right .card-desc {
+  max-width: 770px;
+}
+
+.trailer-top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.trailer-top .label-text {
+  margin-bottom: 8px;
+}
+.trailer-bottom {
+  gap: 40px;
+}
+.trailer-bottom .img-trailer {
+  max-width: 970px;
+}
+.trailer-bottom .desc-text {
+  max-width: 227px;
+  margin-left: 100px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.footer-top .heading-content .label-text {
+  margin-bottom: 8px;
+}
+.footer-top .heading-content .heading-text {
+  max-width: 570px;
+  margin-bottom: 40px;
+}
+.footer-top .heading-content .wrap-btn {
+  gap: 24px;
+}
+.footer-top .heading-content .wrap-btn .img-platform {
+  max-height: 44px;
+}
+.footer-top .wrap-description {
+  gap: 30px;
+}
+.footer-top .wrap-description .item {
+  width: 172px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-top .wrap-description .item .desc-title {
+  margin-bottom: 40px;
+}
+.footer-top .wrap-description .item .menu-link:not(:last-child) {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.footer-top .wrap-description .item .address {
+  width: 170px;
+  flex-shrink: 0;
+}
+.footer-bottom .subscribe {
+  border-bottom: 1px solid #222222;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.footer-bottom .subscribe-left .desc-text {
+  margin-bottom: 8px;
+}
+.footer-bottom .subscribe-left .email {
+  color: #ffffff;
+  line-height: 30px;
+}
+.footer-bottom .copyright {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

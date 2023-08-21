@@ -1,0 +1,31 @@
+.progress {
+    &-wrapper {
+        gap: 120px;
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &-left {
+                .label-text {
+                    margin-bottom: 20px;
+                }
+                .card-title {
+                    font-size: 120px;
+                    font-weight: 500;
+                    line-height: 130px;
+                    color: $white-color;
+                }
+            }
+
+            &-right {
+                .card-title {
+                    margin-bottom: 28px;
+                }
+                .card-desc {
+                    max-width: 770px;
+                }
+            }
+        }
+    }
+}

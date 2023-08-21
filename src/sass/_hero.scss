@@ -1,0 +1,40 @@
+.hero {
+    position: relative;
+    &-top {
+        margin-bottom: 80px;
+        .heading-text {
+            font-family: $font-satoshi;
+            font-size: 142px;
+            font-weight: 900;
+            line-height: 170px;
+            text-align: center;
+        }
+    }
+
+    &-bottom {
+        gap: 30px;
+        .wrap-desc {
+            max-width: 172px;
+            .desc-text:first-child {
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    .wrap-img {
+        &-inner {
+            display: inline-flex;
+            position: relative;
+        }
+        .img-hero {
+            max-width: 1105px;
+        }
+
+        .ic-hero {
+            position: absolute;
+            bottom: -56px;
+            right: 30px;
+            max-width: 150px;
+        }
+    }
+}

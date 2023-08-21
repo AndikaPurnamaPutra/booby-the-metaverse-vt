@@ -1,0 +1,23 @@
+.story {
+    &-top {
+        margin-bottom: 60px;
+        .label-text {
+            margin-bottom: 8px;
+        }
+
+        .heading-content {
+            gap: 60px;
+        }
+        .wrap-desc {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &-bottom {
+        .img-story {
+            max-width: 1170px;
+        }
+    }
+}

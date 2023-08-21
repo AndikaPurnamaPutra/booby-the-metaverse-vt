@@ -1,0 +1,30 @@
+.btn {
+    font-family: $font-satoshi;
+    font-size: $p;
+    color: $white-color;
+    display: inline-block;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+
+    &-sign {
+        padding: 16px 31.5px;
+        border-radius: 70px;
+        outline: 1px solid $light-gray;
+        font-weight: 300;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &-outline {
+        font-size: 16px;
+        padding: 16px;
+        outline: 1px solid $white-color;
+    }
+
+    &-platform {
+        display: inline-flex;
+    }
+}

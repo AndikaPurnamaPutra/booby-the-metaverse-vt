@@ -1,0 +1,18 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+// Font Family
+$font-satoshi: "Satoshi", sans-serif;
+// Color
+$white-color: #ffffff;
+$black-color: #000000;
+$light-gray: #d0d0d0;
+$dark-gray: rgba(0, 0, 0, 0.6);
+// Font Size
+$h1: 144px;
+$h2: 60px;
+$h4: 24px;
+$p: 18px;
+// Background-color
+$bg-dark: $black-color;
+$bg-dark-gray: $dark-gray;
+$bg-blue-linear: linear-gradient(180deg, #5c7eff 0%, #19234a 100%);
