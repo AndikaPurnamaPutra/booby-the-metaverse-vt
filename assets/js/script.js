@@ -9,9 +9,9 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("sticky", "scrolled");
     }
 
-    if (navbarCollapse.classList.contains("active")) {
-        navbarCollapse.style.height = "100%";
-    }
+    // if (navbarCollapse.classList.contains("active")) {
+    //     navbarCollapse.style.height = "100%";
+    // }
 });
 
 // Navbar Mobile
