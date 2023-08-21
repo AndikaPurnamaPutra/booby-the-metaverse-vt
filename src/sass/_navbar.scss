@@ -36,11 +36,11 @@
         }
 
         &.active {
-            height: 100vh;
-            overflow: auto;
+            height: 200px;
+            // height: 100%;
+            overflow-y: auto;
 
             .wrap-btn {
-                width: 100%;
                 opacity: 1;
             }
         }
@@ -51,11 +51,11 @@
         top: 0;
         background-color: transparent;
         z-index: 100;
-        transition: all 50ms ease;
+        transition: all 100ms ease;
     }
 
     &.scrolled {
-        background-color: $bg-dark;
+        background-color: $black-color;
     }
 
     @media (min-width: 993px) {

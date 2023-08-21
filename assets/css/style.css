@@ -209,11 +209,10 @@ section {
   gap: 30px;
 }
 .navbar-collapse.active {
-  height: 100vh;
-  overflow: auto;
+  height: 200px;
+  overflow-y: auto;
 }
 .navbar-collapse.active .wrap-btn {
-  width: 100%;
   opacity: 1;
 }
 .navbar.sticky {
@@ -221,7 +220,7 @@ section {
   top: 0;
   background-color: transparent;
   z-index: 100;
-  transition: all 50ms ease;
+  transition: all 100ms ease;
 }
 .navbar.scrolled {
   background-color: #000000;

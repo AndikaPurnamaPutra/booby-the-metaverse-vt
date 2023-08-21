@@ -1,3 +1,4 @@
+// Navbar
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     const navbarHeight = navbar.clientHeight;
