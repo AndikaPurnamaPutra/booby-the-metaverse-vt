@@ -1,4 +1,5 @@
 // Navbar
+// const navbarCollapse = document.querySelector(".navbar-collapse");
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     const navbarHeight = navbar.clientHeight;
