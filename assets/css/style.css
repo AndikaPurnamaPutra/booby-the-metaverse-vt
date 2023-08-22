@@ -2,11 +2,13 @@
 .btn {
   font-family: "Satoshi", sans-serif;
   font-size: 18px;
+  font-weight: 500;
   color: #ffffff;
   display: inline-block;
   border: unset;
   background-color: unset;
   cursor: pointer;
+  transition: all 500ms ease;
 }
 .btn-sign {
   padding: 16px 31.5px;
@@ -21,6 +23,10 @@
   font-size: 16px;
   padding: 16px;
   outline: 1px solid #ffffff;
+}
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .btn-platform {
   display: inline-flex;
@@ -608,8 +614,18 @@ section {
 .trailer-bottom {
   gap: 40px;
 }
-.trailer-bottom .img-trailer {
+.trailer-bottom .video-play {
+  position: relative;
+}
+.trailer-bottom .video-play .img-trailer {
   max-width: 970px;
+}
+.trailer-bottom .video-play .ic-btn-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70px;
 }
 .trailer-bottom .desc-text {
   max-width: 227px;
@@ -624,6 +640,14 @@ section {
   }
   .trailer-bottom .desc-text {
     margin-left: 50px;
+  }
+  .trailer-bottom .video-play .ic-btn-play {
+    max-width: 52px;
+  }
+}
+@media (max-width: 576px) {
+  .trailer-bottom .video-play .ic-btn-play {
+    max-width: 32px;
   }
 }
 
@@ -733,8 +757,11 @@ section {
     margin-bottom: 20px;
   }
   .footer-top .wrap-description {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+  }
+  .footer-top .wrap-description .item {
+    min-width: 142px;
   }
   .footer-top .wrap-description .item .desc-title {
     margin-bottom: 14px;

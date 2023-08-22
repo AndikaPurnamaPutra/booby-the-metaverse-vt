@@ -9,8 +9,18 @@
 
     &-bottom {
         gap: 40px;
-        .img-trailer {
-            max-width: 970px;
+        .video-play {
+            position: relative;
+            .img-trailer {
+                max-width: 970px;
+            }
+            .ic-btn-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 70px;
+            }
         }
 
         .desc-text {
@@ -29,6 +39,22 @@
 
             .desc-text {
                 margin-left: 50px;
+            }
+
+            .video-play {
+                .ic-btn-play {
+                    max-width: 52px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-bottom {
+            .video-play {
+                .ic-btn-play {
+                    max-width: 32px;
+                }
             }
         }
     }

@@ -129,9 +129,10 @@
                 }
             }
             .wrap-description {
-                flex-direction: column;
+                flex-wrap: wrap;
                 gap: 20px;
                 .item {
+                    min-width: 142px;
                     .desc-title {
                         margin-bottom: 14px;
                     }
