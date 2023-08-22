@@ -1,6 +1,15 @@
 .footer {
     padding-top: 100px;
     padding-bottom: 30px;
+
+    .desc-title {
+        font-size: 18px;
+    }
+
+    .menu-link {
+        font-size: 18px;
+    }
+
     &-top {
         .heading-content {
             .label-text {
@@ -31,7 +40,7 @@
 
                 .menu-link:not(:last-child) {
                     margin-bottom: 20px;
-                    line-height: 30px;
+                    line-height: 166.667%;
                 }
 
                 .address {
@@ -57,9 +66,94 @@
                     line-height: 30px;
                 }
             }
+
+            &-right {
+                .img-btn-to-top {
+                    max-width: 70px;
+                }
+            }
         }
         .copyright {
             text-align: center;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        &-top {
+            .wrap-description {
+                gap: 40px;
+                .item {
+                    width: unset;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-top {
+            margin-bottom: 30px;
+            flex-direction: column;
+
+            .heading-content {
+                margin-bottom: 30px;
+                .heading-text {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .wrap-description {
+                .item {
+                    .desc-title {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        .desc-title,
+        .menu-link {
+            font-size: 16px;
+        }
+        &-top {
+            margin-bottom: 20px;
+            .heading-content {
+                margin-bottom: 20px;
+                .heading-text {
+                    margin-bottom: 20px;
+                }
+            }
+            .wrap-description {
+                flex-direction: column;
+                gap: 20px;
+                .item {
+                    .desc-title {
+                        margin-bottom: 14px;
+                    }
+
+                    .menu-link:not(:last-child) {
+                        margin-bottom: 10px;
+                        line-height: 166.667%;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            .subscribe {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                &-right {
+                    .img-btn-to-top {
+                        max-width: 52px;
+                    }
+                }
+            }
         }
     }
 }

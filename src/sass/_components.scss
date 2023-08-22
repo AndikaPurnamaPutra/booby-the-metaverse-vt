@@ -27,4 +27,39 @@
     &-platform {
         display: inline-flex;
     }
+
+    @media (max-width: 768px) {
+        &-sign {
+            padding: 14px 28.5px;
+        }
+        &-outline {
+            padding: 14px;
+        }
+    }
+}
+
+// Card
+.card {
+    .card-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+        color: $white-color;
+    }
+    .card-desc {
+        font-size: 18px;
+        font-weight: 400;
+        color: $light-gray;
+        line-height: 166.667%;
+    }
+
+    @media (max-width: 576px) {
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-desc {
+            font-size: 16px;
+        }
+    }
 }

@@ -54,4 +54,55 @@
             }
         }
     }
+
+    @media (max-width: 1200px) {
+        &-bottom {
+            .card {
+                &-collapse {
+                    padding: 24px;
+                }
+                &-body {
+                    gap: 18px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-top {
+            margin-bottom: 30px;
+        }
+        &-bottom {
+            flex-wrap: wrap;
+            .card {
+                &-collapse {
+                    padding: 40px;
+                }
+
+                &-img {
+                    max-width: 328px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 576px) {
+        &-top {
+            margin-bottom: 20px;
+        }
+        &-bottom {
+            align-items: center;
+            gap: 20px;
+            .card {
+                &-collapse {
+                    padding: 32px;
+                }
+                max-width: 90%;
+                margin: 0 auto;
+                &-img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
