@@ -1,7 +1,14 @@
 .footer {
     padding-top: 100px;
     padding-bottom: 30px;
-
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        @include responsive(md) {
+            gap: 50px;
+        }
+    }
     .desc-title {
         font-size: 18px;
     }
@@ -78,7 +85,7 @@
         }
     }
 
-    @media (max-width: 1200px) {
+    @include responsive(xl) {
         padding-top: 50px;
         padding-bottom: 20px;
         &-top {
@@ -91,7 +98,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @include responsive(md) {
         &-top {
             margin-bottom: 30px;
             flex-direction: column;
@@ -104,6 +111,7 @@
             }
 
             .wrap-description {
+                flex-direction: column;
                 .item {
                     .desc-title {
                         margin-bottom: 20px;
@@ -113,7 +121,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @include responsive(sm) {
         padding-top: 40px;
         padding-bottom: 10px;
         .desc-title,

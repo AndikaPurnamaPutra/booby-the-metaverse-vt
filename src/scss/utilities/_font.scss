@@ -1,0 +1,116 @@
+// @font-face {
+// 	font-family: "Italian Plate No1 Expanded";
+// 	src: url("../../../assets/font/Italian Plate No1 Expanded.ttf");
+// 	src: url("../../../assets/font/Italian Plate No1 Expanded.ttf")
+// 			format("embedded-opentype"),
+// 		url("../../../assets/font/Italian Plate No1 Expanded.ttf")
+// 			format("truetype"),
+// 		url("../../../assets/font/Italian Plate No1 Expanded.ttf")
+// 			format("woff"),
+// 		url("../../../assets/font/Italian Plate No1 Expanded.ttf") format("ttf");
+// }
+
+// Font Family
+$font-satoshi: "Satoshi", sans-serif;
+$base: 18px;
+
+$h1: 144px;
+$h2: 60px;
+$h4: 24px;
+$p: 18px;
+
+body {
+	font-family: $font-satoshi;
+	font-size: $base;
+	font-weight: 400;
+    color: $light-gray;
+    background-color: $bg-dark;
+}
+
+// Label
+.label-text {
+    font-size: $p;
+    font-weight: 400;
+    color: $white-color;
+    line-height: 30px;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 8px;
+
+    .line {
+        content: "";
+        display: inline-block;
+        width: 36px;
+        height: 1px;
+        background-color: $white-color;
+    }
+}
+
+// .heading-text
+.heading-text {
+    font-size: 60px;
+    font-weight: 500;
+    color: $white-color;
+    line-height: 120%;
+
+    @media (max-width: 1200px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 42px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 30px;
+    }
+}
+
+//  .desc-text
+.desc-text {
+    font-size: $p;
+    font-weight: 400;
+    line-height: 166.667%;
+    color: $light-gray;
+
+    @media (max-width: 576px) {
+        font-size: 16px;
+    }
+}
+
+// Card
+.card {
+    .card-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+        color: $white-color;
+    }
+    .card-desc {
+        font-size: 18px;
+        font-weight: 400;
+        color: $light-gray;
+        line-height: 166.667%;
+    }
+
+    @media (max-width: 576px) {
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-desc {
+            font-size: 16px;
+        }
+    }
+}
+
+// $fontFamilyInter: "Inter", sans-serif;
+// $fontFamilyGilroy: "Gilroy", sans-serif;
+// $fontFamilies: (
+//     font-sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+//     font-serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+//     font-mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+//     font-inter: '"Inter", sans-serif',
+//     font-gilroy: '"Gilroy", sans-serif'
+// ) !default;

@@ -1,0 +1,97 @@
+.hero {
+	position: relative;
+	&-top {
+		margin-bottom: 80px;
+		.heading-text {
+			font-family: $font-satoshi;
+			font-size: 142px;
+			font-weight: 900;
+			line-height: 118.056%;
+			text-align: center;
+		}
+	}
+
+	&-bottom {
+		gap: 30px;
+		.wrap-desc {
+			max-width: 172px;
+			gap: 14px;
+			// .desc-text:first-child {
+			//     margin-bottom: 14px;
+			// }
+		}
+	}
+
+	.wrap-img {
+		margin-left: -135px;
+		display: inline-flex;
+		position: relative;
+		.img-hero {
+			max-width: 1105px;
+		}
+
+		.ic-hero {
+			position: absolute;
+			bottom: -56px;
+			right: 30px;
+			max-width: 150px;
+		}
+	}
+
+	@include responsive(xl) {
+		&-top {
+			.heading-text {
+				font-size: 108px;
+			}
+		}
+
+		.wrap-img {
+			.ic-hero {
+				position: absolute;
+				bottom: -48px;
+				right: 30px;
+				max-width: 108px;
+			}
+		}
+	}
+
+	@include responsive(md) {
+		&-top {
+			margin-bottom: 30px;
+			.heading-text {
+				font-size: 86px;
+			}
+		}
+
+		&-bottom {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+
+			.wrap-desc {
+				max-width: unset;
+			}
+		}
+	}
+
+	@include responsive(sm) {
+		&-top {
+			margin-bottom: 20px;
+			.heading-text {
+				font-size: 36px;
+			}
+		}
+
+		&-bottom {
+			gap: 20px;
+		}
+
+		.wrap-img {
+			.ic-hero {
+				position: absolute;
+				bottom: -24px;
+				right: 16px;
+				max-width: 52px;
+			}
+		}
+	}
+}

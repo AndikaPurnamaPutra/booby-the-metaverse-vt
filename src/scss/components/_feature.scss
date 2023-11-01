@@ -55,7 +55,7 @@
         }
     }
 
-    @media (max-width: 1200px) {
+    @include responsive(xl)  {
         &-bottom {
             .card {
                 &-collapse {
@@ -68,7 +68,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @include responsive(md)  {
         &-top {
             margin-bottom: 30px;
         }

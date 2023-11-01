@@ -1,5 +1,5 @@
 .btn {
-    font-family: $font-satoshi;
+	font-family: $font-satoshi;
     font-size: $p;
     font-weight: 500;
     color: $white-color;
@@ -8,8 +8,15 @@
     background-color: unset;
     cursor: pointer;
     transition: all 500ms ease;
-
-    &-sign {
+	&-link {
+		justify-content: center;
+		gap: 24px;
+		padding: 0;
+	}
+	&-icon {
+		padding: 0;
+	}
+	&-sign {
         padding: 16px 31.5px;
         border-radius: 70px;
         outline: 1px solid $light-gray;
@@ -43,30 +50,13 @@
             padding: 14px;
         }
     }
-}
-
-// Card
-.card {
-    .card-title {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 150%;
-        color: $white-color;
-    }
-    .card-desc {
-        font-size: 18px;
-        font-weight: 400;
-        color: $light-gray;
-        line-height: 166.667%;
-    }
-
-    @media (max-width: 576px) {
-        .card-title {
-            font-size: 20px;
-        }
-
-        .card-desc {
-            font-size: 16px;
-        }
-    }
+	// &-secondary{
+	//     background-color: $secondary;
+	//     color: $white;
+	// }
+	// &-primary{
+	//     @extend .btn-secondary;
+	//     background-color: $primary;
+	//     color: $black;
+	// }
 }

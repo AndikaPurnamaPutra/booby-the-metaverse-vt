@@ -1,4 +1,7 @@
 .trailer {
+    &-wrapper {
+        width: 100%;
+    }
     &-top {
         text-align: center;
         margin-bottom: 60px;
@@ -29,7 +32,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @include responsive(md)  {
         &-top {
             margin-bottom: 30px;
         }
@@ -49,7 +52,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @include responsive(sm) {
         &-bottom {
             .video-play {
                 .ic-btn-play {
